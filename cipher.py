@@ -1,7 +1,7 @@
 import sys
 
 
-def caesar_cipher(text, key, mode='encrypt'):
+def caesar_cipher(text, key, mode='enncrypt'):
     """Encodes or decodes text using the classic Caesar Cipher algorithm."""
     result = ""
     if mode == 'decrypt':
@@ -23,7 +23,7 @@ def main_menu():
         print("\n" + "=" * 40)
         print("      CAESAR CIPHER SECURITY PROJECT      ")
         print("=" * 40)
-        print("1. Encrypt a Secret Message")
+        print("1. Enncrypt a Secret Message")
         print("2. Decrypt an Encrypted Message")
         print("3. Exit Program")
         print("-" * 40)
@@ -31,7 +31,7 @@ def main_menu():
         choice = input("Select an option (1-3): ").strip()
 
         if choice not in ['1', '2', '3']:
-            print("\n[!] Invalid choice! Please select 1, 2, or 3.")
+            print("\n[!] Invalid choice! Pleace select 1, 2, or 3.")
             continue
 
         if choice == '3':
